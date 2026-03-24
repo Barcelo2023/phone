@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport"  content="width=device-width,
+        initial-scale=1.0"> 
+             <title>login form</title>
+            >
+      <style>
+
+        body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner{       
+    height: 500px;
+    width: 273px;
+    margin-left: 40px;
+    margin-top: 50px;
+    background-color: green;
+    border-radius: 10px;    
+    
+}
+
+
+.h3{
+    color:white;
+    text-align: center;
+}
+#inp1{
+    height: 30px;
+    width:120px ;
+    border-radius: 10px;
+    border: none; 
+    margin-left: 10px;
+    font-size: large;  
+        
+}
+
+#inp2{
+    height: 30px;
+    width:120px ;
+    border-radius: 10px;
+    border: none; 
+    font-size: large;  
+        
+}
+
+
+
+
+.btnp
+{
+    height: 30px;
+    width:50px ;
+    font-weight: bolder;   
+    background-color:white;
+    border-radius: 10px;
+    border: none;       
+    margin-left: 12px;
+    margin-top: 50px;
+    font-size: larger;
+    cursor: pointer;
+}    
+
+#d1{
+  color: white;
+}
+.btnp:hover
+{
+
+    background-color:red;
+    border: 2px solid  white;
+    color: white;
+    
+}
+
+
+
+#rad:hover
+{
+
+    background-color:red;
+    border: 2px solid  white;
+    color: white;
+    
+} 
+
+#data{
+     width: 157px;
+     height: 20px;
+     border: 1px solid transparent;
+     border-radius: 8px;
+     margin-left: 49px;
+     margin-top: 90px;
+     font-size: small;
+  
+}
+
+
+
+
+     </style>
+     </head>
+    
+        <body>
+          
+       
+
+        <div class="conteiner">
+        
+        <h3 class="h3">Calcolatrice</h3>
+         <input type="number" id="inp1" value="" >
+         
+         <input type="number"  id="inp2" value="" >
+       
+        <button onclick="checkButton(this)" 
+          class="btnp">   +</button>
+        <button onclick="checkButton(this)" 
+          class="btnp">   -</button>
+        <button onclick="checkButton(this)" 
+          class="btnp">   x</button>
+        <button onclick="checkButton(this)" 
+          class="btnp">   :</button>
+        
+        <button onclick="checkButton(this)" 
+          class="btnp">   C</button>
+        <button onclick="checkButton(this)"
+          class="btnp"> Rad</button> 
+        
+
+         <input type="text" id="data" value="" readonly>
+         
+        
+        
+         </div>      
+        
+       </body> 
+      
+       <script>
+
+       let oggi;      
+       function update(){
+       oggi = new Date();     
+       document.getElementById('data').value = (oggi) ; 
+       }
+        setInterval(update, 1000);
+        update();
+
+        let secondo ;
+        let primo;
+        let risultato;
+      
+
+     
+       function checkButton(element) {
+          oper = element.innerText;
+           
+          if(oper == "C"){         
+                 
+          
+          document.getElementById('inp1').value = "" ;        
+          document.getElementById('inp2').value = "" ;
+        
+          return
+         
+          }
+
+           primo = document.getElementById('inp1').value;
+           primo=primo*1;
+
+           if(primo == "0") return
+          
+           if(oper == "Rad"){
+       
+            let radice =0;
+            let	conta=0;          
+
+	       do{	
+             conta=conta+1;
+              radice =conta*conta;       
+	          }while( radice < primo);                   
+              if (radice  === primo) {
+           document.getElementById('inp2').value = (conta);  
+                
+                return
+              }
+                 conta=conta-1;
+          do{	 
+                
+              	conta = conta+0.00000001;
+              	radice =conta*conta;    	
+            	}while ( radice<primo);
+
+              document.getElementById('inp2').value = (conta);                 
+            
+                return
+          }
+       
+           secondo =document.getElementById("inp2").value;            
+           secondo=secondo*1;
+                     
+           if (oper == "+") risultato=primo + secondo;
+           if (oper == "-") risultato = primo-secondo;
+           if (oper == ":") risultato=primo/ secondo;
+           if (oper == "x") risultato=primo*secondo;
+
+           document.getElementById('inp1').value = (risultato); 
+           document.getElementById('inp2').value = "";
+           
+        
+           
+      } 
+                   
+    
+        
+ </script>         
+           
+ </html>         
+
+                
