@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invia msg</title>
+    <style>
+    *{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: 'Times New Roman', serif;
+}
+h2{
+    margin-left: 80px;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+#container{
+    width: 27%;
+    margin: 30px auto;
+    background-color: wheat;
+}
+
+
+#lab{
+     display: inline-block;
+    transform: translatey(53px);
+}
+
+ input
+{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+    margin-top: 30px;
+    transform: translateX(50px);
+}    
+#labmsg {
+
+    display: inline-block;
+    transform: translateY(32px);
+
+
+}
+
+textarea {
+    line-height: 20px; 
+    background-image: linear-gradient(transparent 19px, #ccc 19px);
+    background-size: 100% 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+
+button{
+    height: 30px;
+    width: 320px;
+   margin-top: 10px; 
+   border-radius: 5px;
+   cursor: pointer;
+   background-color:white;
+}
+button:hover{
+    
+    background-color: rgb(179, 245, 242);
+}
+  </style>
+  
+</head>
+     <div id="container">
+     <h2>Invia messaggio</h2>
+     <form action="ricevi.html"  method="get">
+     <label for="date"  id="lab" >Data:</label> 
+     <input type="text" id="data"  name="data" readonly>
+     <label for="name"  id="lab">Nome:</label>
+     <input type="text" name="name" id="name"  required  autocomplete="off">
+    
+      <label for="message" id="labmsg" >Messaggio:</label>
+       <textarea  name="message" id="message" rows="5"  cols="40"  required></textarea>
+      
+      <button onclick="cripta()" type="submit" >Send</button>
+      </form>
+    </div>
+           
+    <script>
+
+           let stringaAscii = "";
+           let stringaConverti = "";
+           let conta = 0;
+            let testoMessage ="";
+            let lunghezza = 0;
+            let converti =0;
+            let ascii = "";          
+            let pari=0;
+            let lettera = "";
+            let giorno;
+            let fgiorno;
+            let mese;
+           let Fmese;
+            let anno;
+            let ora ; 
+           let fora;
+            let data ;
+            let minuti;
+            let numero;
+            
+
+                   data = new Date(); 
+                   giorno = data.getDate();
+                   fgiorno = data.getDate();
+                   mese =   data.getMonth() + 1;
+                   fmese =   data.getMonth() + 1;
+                   anno =   data.getFullYear(); 
+                   ora  =   data.getHours(); 
+                   fora  =   data.getHours(); 
+                   minuti = data.getMinutes();
+        
+
+                   if(giorno < 10) fgiorno = String(giorno).padStart(2, '0');
+
+                   if(mese   < 10)   fmese   = String(mese).padStart(2, '0');
+                
+                   if(ora    < 10)   fora = String(ora).padStart(2, '0');
+                               
+                   let dataFormattata = `${fgiorno}${fmese}${anno}${fora}`;                                 
+               
+                  document.getElementById('data').value = (data) ; 
+                
+                
+                               
+             do{	 
+               	stringaAscii +=  String.fromCharCode(conta);                   
+                 conta++;                 	
+              	}while ( conta < 255); 
+
+                  
+                 function cripta() {
+                 numero = 0;
+                 numero = numero +mese +ora;
+                 nome = document.getElementById("name").value;
+                 lunghezza = nome.length;
+
+                 for (conta=0; conta <lunghezza; conta ++)
+	               {		
+                 lettera = nome[conta] ;  	     		 
+                 converti = lettera.charCodeAt(0);
+	  	            pari = conta;	  	  	  	  
+
+                 if (pari %2 == 0) {  
+         
+                 converti=converti + numero;
+                                               
+                 }
+                 else{     
+                 converti = converti - numero;
+                 
+                }
+                  numero= numero -1;
+                  ascii = String.fromCharCode(converti) ; 	
+		              stringaConverti+= ascii;            
+               
+                } 
+              
+                document.getElementById("name").value = stringaConverti;
+                stringaConverti= "";
+                  
+                 numero = 0;
+                 numero = numero +mese +ora;
+                 
+                 testoMessage = document.getElementById("message").value;
+                 lunghezza = testoMessage.length;          
+
+                 for (conta=0; conta <lunghezza; conta ++)
+	               {		
+                 lettera = testoMessage[conta] ;  	     		 
+                 converti = lettera.charCodeAt(0);
+                
+	  	           pari = conta;	  	  	  	  
+
+               if (pari %2 == 0) {  
+               converti=converti -numero;
+               
+                }
+                else{     
+                converti = converti +numero; 
+                
+               }
+               numero = numero  -1;
+               ascii = String.fromCharCode(converti) ; 	
+		           stringaConverti+= ascii;            
+
+          } 
+          
+                document.getElementById("message").value = stringaConverti;
+                document.getElementById('data').value = (dataFormattata) ; 
+
+          
+        }              
+          
+        
+    </script>
+
+  
+            
+  </body>
+  </html>
