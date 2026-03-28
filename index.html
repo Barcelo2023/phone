@@ -67,9 +67,7 @@
     cursor: pointer;
 }    
 
-#d1{
-  color: white;
-}
+
 .btnp:hover
 {
 
@@ -91,7 +89,7 @@
 } 
 
 #data{
-     width: 157px;
+     width: 154px;
      height: 20px;
      border: 1px solid transparent;
      border-radius: 8px;
@@ -148,7 +146,7 @@
        oggi = new Date();     
        document.getElementById('data').value = (oggi) ; 
        }
-        setInterval(update, 1000);
+        setInterval(update, 30000);
         update();
 
         let secondo ;
