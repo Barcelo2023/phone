@@ -13,6 +13,7 @@ html, body {
   flex-direction: column !important;
   justify-content: flex-start;       /* Allinea dall'alto in modo ordinato */
   align-items: center;
+  text-align: center;
   height: 100vh;
   width: 100vw;
   padding: 15px;
@@ -29,6 +30,10 @@ html, body {
 }
 
 
+#primo{
+   color: white;
+   transform:translateY(-10px) ;
+}
 
 
 /* Uniforma la larghezza di tutti gli input e i bottoni */
@@ -46,6 +51,11 @@ html, body {
    margin-top: 8px;
    color: whitesmoke;
    cursor: pointer;
+   transform:translateY(-27px) ;
+}
+#operat{
+   color: white;
+   transform:translateY(-20px) ;
 }
 
 #oper{
@@ -58,11 +68,18 @@ html, body {
   box-sizing: border-box;
    background-color:#6c757d; 
    margin-top: 20px;
-   font-size: 16px;
+   font-size: 22px;
    color: whitesmoke; 
    cursor: pointer;
+   transform: translateY(-44px);
 
 }
+
+#secondo{
+   color: white;
+   transform:translateY(-38px) ;
+}
+
 
 #inp2{
 
@@ -78,6 +95,27 @@ html, body {
    margin-top: 10px;
    color: whitesmoke;
    cursor: pointer;
+   transform: translateY(-53px);
+}
+#uguale{
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 80px; 
+ transform: translateY(-38px);
+  height: 30px;           /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d;   
+   margin-top: 20px;
+   font-size: 22px;
+   color: whitesmoke; 
+   cursor: pointer;
+
+}
+#risult{
+   color: white;
+   transform:translateY(-36px) ;
 }
 
 #risultato{
@@ -94,27 +132,10 @@ html, body {
    margin-top: 10px;
    color: whitesmoke;
    cursor: pointer;
+   transform: translateY(-48px);
 }
 
-#uguale{
-  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 80px; 
-  height: 30px;             /* Impedisce che diventino troppo larghi su tablet/PC */
-  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-   background-color:#6c757d; 
-   margin-top: 20px;
-   font-size: 20px;
-   color: whitesmoke; 
-   cursor: pointer;
 
-}
-.container p {
-   color: white;
-   transform:translateY(18px) ;
-}
 
 #data   { 
    width: 90%;                    /* Larghezza ideale per i pollici su mobile */
