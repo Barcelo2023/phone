@@ -35,7 +35,8 @@ html, body {
  #inp1{
 
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  max-width: 220px; 
+  height: 30px;               /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
   font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
   border-radius: 8px;
@@ -66,7 +67,8 @@ html, body {
 #inp2{
 
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  max-width: 220px; 
+  height: 30px;               /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
   font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
   border-radius: 8px;
@@ -81,7 +83,8 @@ html, body {
 #risultato{
 
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  max-width: 220px; 
+  height: 30px;               /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
   font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
   border-radius: 8px;
@@ -115,7 +118,8 @@ html, body {
 
 #data   { 
    width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 360px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  max-width: 360px;
+  height: 30px;                /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
   font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
   border-radius: 8px;
