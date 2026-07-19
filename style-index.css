@@ -113,27 +113,8 @@ html, body {
    cursor: pointer;
 
 }
-#risult{
-   color: white;
-   transform:translateY(-36px) ;
-}
 
-#risultato{
 
-  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 220px; 
-  height: 30px;               /* Impedisce che diventino troppo larghi su tablet/PC */
-  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
-  font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-   background-color:#6c757d; 
-   margin-top: 10px;
-   color: whitesmoke;
-   cursor: pointer;
-   transform: translateY(-48px);
-}
 
 
 
