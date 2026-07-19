@@ -24,7 +24,7 @@ html, body {
    2. TITOLI E POSIZIONAMENTO VERTICALE
    ========================================================================== */
 .container h1 {
-   transform: translateY(30px);
+   transform: translateY(5px);
    color: white;  
 }
 
@@ -42,7 +42,7 @@ html, body {
   border: 1px solid #ccc;
   box-sizing: border-box;
    background-color:#6c757d; 
-   margin-top: 40px;
+   margin-top: 8px;
    color: whitesmoke;
    cursor: pointer;
 }
@@ -73,7 +73,7 @@ html, body {
   border: 1px solid #ccc;
   box-sizing: border-box;
    background-color:#6c757d; 
-   margin-top: 20px;
+   margin-top: 10px;
    color: whitesmoke;
    cursor: pointer;
 }
@@ -88,7 +88,7 @@ html, body {
   border: 1px solid #ccc;
   box-sizing: border-box;
    background-color:#6c757d; 
-   margin-top: 20px;
+   margin-top: 10px;
    color: whitesmoke;
    cursor: pointer;
 }
@@ -122,7 +122,7 @@ html, body {
   border: 1px solid #ccc;
   box-sizing: border-box;
    background-color:#6c757d; 
-   transform: translateY(200px);
+   transform: translateY(30px);
    color: whitesmoke;
   
    }
