@@ -1,0 +1,128 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Blocca lo scroll per un effetto App nativa */
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start;       /* Allinea dall'alto in modo ordinato */
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #242433;         /* Colore di sfondo della tua app */
+}
+
+/* ==========================================================================
+   2. TITOLI E POSIZIONAMENTO VERTICALE
+   ========================================================================== */
+.container h1 {
+   transform: translateY(30px);
+   color: white;  
+}
+
+
+
+
+/* Uniforma la larghezza di tutti gli input e i bottoni */
+ #inp1{
+
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
+  font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   margin-top: 40px;
+   color: whitesmoke;
+   cursor: pointer;
+}
+
+#oper{
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 80px; 
+  height: 40px;             /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   margin-top: 20px;
+   font-size: 25px;
+   color: whitesmoke; 
+   cursor: pointer;
+
+}
+
+#inp2{
+
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
+  font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   margin-top: 20px;
+   color: whitesmoke;
+   cursor: pointer;
+}
+
+#risultato{
+
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 220px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
+  font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   margin-top: 20px;
+   color: whitesmoke;
+   cursor: pointer;
+}
+
+#uguale{
+  width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 80px; 
+  height: 40px;             /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   margin-top: 20px;
+   font-size: 20px;
+   color: whitesmoke; 
+   cursor: pointer;
+
+}
+.container p {
+   color: white;
+   transform:translateY(18px) ;
+}
+
+#data   { 
+   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
+  max-width: 360px;              /* Impedisce che diventino troppo larghi su tablet/PC */
+  padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */
+  font-size: 16px;                   /* Evita lo zoom automatico fastidioso su iOS */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color:#6c757d; 
+   transform: translateY(200px);
+   color: whitesmoke;
+  
+   }
