@@ -27,7 +27,7 @@
          <button  type="button"  id="uguale"  onclick="calcola()"></button>
         <p id="secondo">Secondo valore</p>
          <input type="number"  id="inp2" value=""> 
-         <p id="operatori">più (+) meno (-) per (x)  diviso (:) radice (r) canc (c)</p>        
+         <p id="operatori">somma (s) meno (m) per (p)  diviso (d) radice (r) canc (c)</p>        
                        
          <input type="text" id="data" value="" readonly>
                 
@@ -90,22 +90,19 @@
            const secondo = +numero2
            if(secondo <1) return
                  
-           if (oper === "+") risultato=primo + secondo;
-           if (oper === "-") risultato = primo-secondo;
-           if (oper === ":") risultato=primo/ secondo;
-           if (oper === "x"  || oper === "X") risultato=primo*secondo;
+          
+           if(oper  === "s"  || oper === "S") risultato = primo + secondo;
+           if (oper === "m"  || oper === "M") risultato = primo-secondo;
+           if (oper === "d"  || oper === "D") risultato = primo/ secondo;
+           if (oper === "p"  || oper === "P") risultato = primo*secondo;
           
            document.getElementById('inp1').value = (risultato); 
            document.getElementById('oper').value = ""; 
-           document.getElementById('inp2').value = ""; 
-        
+           document.getElementById('inp2').value = "";         
            
-      } 
-                   
-    
+      }                        
         
  </script>  
-
   
  </body>      
            
