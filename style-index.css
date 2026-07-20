@@ -33,6 +33,7 @@ html, body {
 #primo{
    color: white;
    transform:translateY(-10px) ;
+   font-size: 12px;
 }
 
 
@@ -54,9 +55,12 @@ html, body {
    transform:translateY(-27px) ;
 }
 
-#operat{
+#op{
+   
    color: white;
-   transform: translateY(-26px);
+   font-size: 12px;
+   transform: translateY(-20px);
+
 }
 
 #oper{
@@ -71,16 +75,19 @@ html, body {
    font-size: 22px;
    color: whitesmoke; 
    cursor: pointer;
-    position: absolute;
-  top: 200px;   /* Distanza dal bordo superiore */
-  left: 490px; /* Distanza dal bordo destro */
+   transform: translateY(-26px);  
+   
+}
+
+#ugua{
+    color: white;
+   font-size: 12px;
+   transform: translateY(-20px);
 }
 #uguale{
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
   max-width: 80px; 
-   position: absolute;
-  top: 200px;   /* Distanza dal bordo superiore */
-  right: 490px; /* Distanza dal bordo destro */
+  margin-top: 22px;
  
   height: 30px;           /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
@@ -92,12 +99,15 @@ html, body {
    font-size: 22px;
    color: whitesmoke; 
    cursor: pointer;
+   transform: translateY(-48px);
 
 }
 
 #secondo{
-   color: white;
-   transform:translateY(-5px) ;
+ color: white;
+  margin-top: 18px;
+  font-size: 12px;
+  transform: translateY(-42px);
 }
 
 
@@ -115,13 +125,14 @@ html, body {
    margin-top: 10px;
    color: whitesmoke;
    cursor: pointer;
-   transform: translateY(-23px);
+   transform: translateY(-58px);
 }
 
 
 #operatori{
 
 color: white;
+font-size: 12px;
 }
 
 
