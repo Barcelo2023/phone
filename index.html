@@ -22,26 +22,20 @@
         <p id="primo">Primo valore</p>
          <input type="number" id="inp1" value="">
 
-        <p id="operat"> operatore   +   -   x   :   Rad  C</p>
+        <p id="operat">operatore.................uguale     </p>
          <input type="text" id="oper">
-         
+         <button  type="button"  id="uguale"  onclick="calcola()"></button>
         <p id="secondo">Secondo valore</p>
-         <input type="number"  id="inp2" value="">         
-       
-        <button  type="button"  id="uguale"  onclick="calcola()">=</button>
-        
+         <input type="number"  id="inp2" value=""> 
+         <p id="operatori">più (+) meno (-) per (x)  diviso (:) radice (r) canc (c)</p>        
+                       
          <input type="text" id="data" value="" readonly>
-         
-        
+                
         
          </div>      
-        
-    
-      
-       <script>
-
              
-      
+       <script>
+     
 
             let data= new Date(); 
              document.getElementById('data').value = (data) ; 
@@ -64,7 +58,7 @@
              if(primo <1) return
                  
                    
-           if(oper === "Rad" || oper === "rad" ){          
+           if(oper === "R" || oper === "r" ){          
        
             let radice =0;
             let	conta=0;          
