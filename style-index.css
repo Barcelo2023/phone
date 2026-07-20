@@ -129,12 +129,19 @@ html, body {
 }
 
 
-#operatori{
+#operatori1{
 
 color: white;
-font-size: 12px;
+font-size: 15px;
+transform: translateY(-20px);
 }
 
+#operatori2{
+
+color: white;
+font-size: 15px;
+transform: translateY(-35px);
+}
 
 
 #data   { 
