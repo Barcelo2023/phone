@@ -65,7 +65,7 @@ html, body {
 
 #oper{
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 80px; 
+  max-width: 56px; 
   height: 30px;             /* Impedisce che diventino troppo larghi su tablet/PC */
   padding: 14px;                  /* Dimensione comoda da cliccare su touchscreen */                          
   border-radius: 4px;
@@ -112,7 +112,7 @@ html, body {
 }
 #uguale{
   width: 90%;                    /* Larghezza ideale per i pollici su mobile */
-  max-width: 80px; 
+  max-width: 56px; 
   margin-top: 22px;
  
   height: 30px;           /* Impedisce che diventino troppo larghi su tablet/PC */
