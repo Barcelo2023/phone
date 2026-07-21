@@ -28,7 +28,7 @@
          <input type="number"  id="inp2" value=""> 
           <p id="ugua">uguale</p>
          <button  type="button"  id="uguale"  onclick="calcola()"></button>
-         <p id="operatori1">somma (s) sottrazione (m) moltiplicazione (p)</p>        
+         <p id="operatori1">addizione (a) sottrazione (s) moltiplicazione (m)</p>        
          <p id="operatori2">divisione (d) radice (r) cancellazione (c)</p>              
          <input type="text" id="data" value="" readonly>
                 
@@ -92,10 +92,10 @@
            if(secondo <1) return
                  
           
-           if(oper  === "s"  || oper === "S") risultato = primo + secondo;
-           if (oper === "m"  || oper === "M") risultato = primo-secondo;
+           if(oper  === "a"  || oper === "A") risultato = primo + secondo;
+           if (oper === "s"  || oper === "S") risultato = primo-secondo;
            if (oper === "d"  || oper === "D") risultato = primo/ secondo;
-           if (oper === "p"  || oper === "P") risultato = primo*secondo;
+           if (oper === "m"  || oper === "M") risultato = primo*secondo;
           
            document.getElementById('inp1').value = (risultato); 
            document.getElementById('oper').value = ""; 
